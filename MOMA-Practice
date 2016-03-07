@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<!-- this is an HTML comment -->
+
+<style type="text/css">
+
+
+/* this removes bullets and indents */
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* the arranges the list horizontally */
+li {
+	float: left;
+	
+}
+
+
+/* this styles the links */
+ul li a {
+	display: block;
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFF;
+	width: 120px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+
+
+/* this creates the rollover for the links */
+ul li a:hover {
+	color: #999; 
+	background-color:#CCC;
+}
+#center ul li .MoMAheading:hover {
+	text-decoration: none;
+	color: #000; 
+	background-color: transparent;
+	
+}
+
+
+/* this hides any sub menu and makes it a box */
+ul li ul {
+	visibility: hidden;
+	width: 400px;
+	background-color: #666;
+	position: absolute;
+	bottom: 100%;
+	}
+
+
+
+/* this makes the sub menu visible on rollover */
+ul li:hover ul {
+	visibility: visible;
+	
+	
+	}
+
+
+/* this stlyes the list items in the sub menu */
+ul li ul li {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+	text-align: center;
+	width: 200px;
+	font-size: 24px;
+}
+
+
+/* this styles the links in the sub menu */
+ul li ul a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	background-color: #666;
+	text-align: center;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 2pt;
+	width: 200px;
+box-shadow: 0px 0px 4px 1px #CCC;}
+
+
+
+/* this styles the sub menu style on rollover */
+ul li ul a:hover {
+	background-color: #CCC;
+	width: 200px;
+	color: #000;
+}
+
+
+
+
+
+
+
+.ClearLeft {
+	clear: left;	
+}
+
+
+
+.FloatRight {
+	float: right;
+	clear: both;	
+}
+
+
+
+#center {
+	text-align: center;
+margin-right:-10px;
+margin-left:-10px;
+	padding-left: 230px;
+	padding-right:200px;
+	width:100%;
+	position: fixed;
+	bottom: 10px;
+	box-shadow: 0px 0px 4px 1px #CCC;
+}
+
+
+#center2 {
+	width:100%;
+	position:fixed;
+	bottom: 0px;
+	color:#FFF;
+	margin-left:-10px;
+	text-align:center;
+}
+
+
+ 
+.bottomTop {
+text-align: center;	
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+
+.bottom {
+background-color: #F00;	
+text-align:end;
+margin-left:auto;
+margin-right:-5px;
+padding-right:100px;
+
+
+
+}
+
+
+
+#center2 .bottom a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #FFF;
+	text-decoration: none;
+	padding: 0px 0px 20px 5px;
+	
+	
+	
+}
+
+
+
+#center2 .bottom a:hover {
+	text-decoration: underline;
+}
+
+
+
+.MoMAheading {
+	color: #000;
+	font-size: 40px;
+	text-transform: none;
+	padding-top: 0px;
+	padding-bottom: 0px;	
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+<div class="bottomTop" id="center">
+<ul>
+	<li><a href="#" class="MoMAheading">MoMA</a><li>     
+    <li><a href="#">Visit</a>
+      <ul>     
+        <li><a href="#">Plan a Visit</a></li>     
+            <li><a href="#">VIP Reservations</a></li>     
+      </ul>
+    </li>     
+    <li><a href="#">Explore</a></li>     
+    <li><a href="#">Learn</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Shop</a>
+      <ul> 
+      
+  <li class="ClearLeft"><a href="#">Art Pieces</a></li>
+  <li><a href="#">Concept Art</a></li>      
+       
+     
+      </ul>  
+  </li>
+    <li><a href="#">MoMA PS1</a></li>
+    
+</ul>
+</div>
+
+
+
+
+<div id="center2">
+<div class="bottom">
+<a href="#">BUY TICKETS</a>
+<a href="#">JOIN</a>
+<a href="#">CALENDER</a>     
+<a href="#">ABOUT MoMA</a>
+</div>
+</div>
+</body>
+</html>
